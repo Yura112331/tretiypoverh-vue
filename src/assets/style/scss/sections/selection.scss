@@ -1,0 +1,200 @@
+.title-page .container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.title-page {
+    background: linear-gradient(135deg, #6a11cb 0%, #d7deeb 100%);
+    color: white;
+    padding: 20px 20px;
+    text-align: center;
+    border-radius: 8px;
+    margin-bottom: 30px;
+}
+
+.title-page__title {
+    font-size: 40px;
+    font-weight: 400;
+    color: #ffffff;
+    text-align: center;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+#filter-form {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.filter-group {
+    margin-bottom: 20px;
+}
+
+.filter-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+    font-size: 20px;
+}
+
+.filter-group select, .filter-group input[type="text"], .filter-group input[type="checkbox"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px;
+    background-color: #f5f5f5;
+}
+
+.filter-group input[type="checkbox"] {
+    width: auto;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+#filter-form button {
+    background-color: #6a11cb;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    display: block;
+    width: 100%;
+    transition: background-color 0.3s ease;
+}
+
+#filter-form button:hover {
+    background-color: #4a90e2;
+}
+
+#results {
+    margin-top: 30px;
+}
+
+.therapist {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.therapist:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.therapist img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+
+.therapist-details {
+    flex-grow: 1;
+}
+
+.therapist h2 {
+    margin-top: 0;
+    color: #6a11cb;
+    font-size: 1.5em;
+}
+
+.therapist p {
+    margin: 5px 0;
+    color: #555;
+}
+
+.therapist .price-format {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #6a11cb;
+}
+
+.therapist .tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.therapist .tags span {
+    background-color: #e0e0e0;
+    border-radius: 4px;
+    padding: 5px 10px;
+    font-size: 0.9em;
+    color: #333;
+}
+
+.therapist button {
+    background-color: #6a11cb;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.therapist button:hover {
+    background-color: #4a90e2;
+}
+
+@media (max-width: 768px) {
+    .filter-group {
+        flex: 1 1 calc(50% - 20px);
+    }
+
+    .therapist {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .therapist img {
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .filter-group {
+        flex: 1 1 100%;
+    }
+}
+.filter-group-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.filter-group-wrapper .filter-group {
+    flex: 1 1 calc(33.333% - 10px);
+    box-sizing: border-box;
+    margin: 5px;
+}
+
+@media (max-width: 768px) {
+    .filter-group-wrapper .filter-group {
+        flex: 1 1 calc(50% - 10px);
+    }
+}
+
+@media (max-width: 480px) {
+    .filter-group-wrapper .filter-group {
+        flex: 1 1 100%;
+    }
+}

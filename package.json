@@ -1,0 +1,33 @@
+{
+  "name": "tretiypoverh-vue",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "axios": "^1.7.4",
+    "body-parser": "^1.20.2",
+    "bootstrap": "^5.3.3",
+    "express": "^4.19.2",
+    "jquery": "^3.7.1",
+    "node-fetch": "^3.3.2",
+    "node-telegram-bot-api": "^0.66.0",
+    "popper.js": "^1.16.1",
+    "socket.io": "^4.7.5",
+    "vue": "^3.4.29",
+    "vue-meta": "^2.4.0",
+    "vue-router": "^4.4.3"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^5.0.5",
+    "node-sass": "^9.0.0",
+    "sass-embedded": "^1.77.8",
+    "sass-loader": "^16.0.1",
+    "vite": "^5.3.1"
+  }
+}
